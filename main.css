@@ -1,0 +1,52 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: rgb(3, 4, 33);
+}
+
+.container {
+    margin: 5em 5em;
+    color: burlywood;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: clamp(0.5rem, calc(5rem + 0.5rem), 2.8rem);
+}
+
+.container img {
+    width: 50%;
+}
+
+.container button {
+    cursor: pointer;
+    background-color: yellowgreen;
+    padding: 0.5em;
+    border: none;
+    width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+    
+    .container {
+        margin: 5em 1em;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .container button {
+        width: 100%;
+    }
+
+    .container h1 {
+        font-size: clamp(0.5rem, calc(5rem + 0.5rem), 2rem);
+    }
+
+  }
